@@ -1,0 +1,15 @@
+.score {
+  max-width: 5rem;
+  text-align: center;
+  line-height: 0rem;
+  margin : 0 2rem;
+}
+
+.score h1 {
+  font-size: 4rem;
+  font-weight: 800;
+}
+
+.score h3 {
+  font-size: 1rem;
+}
