@@ -1,0 +1,12 @@
+.mainSingleDice{
+    display: flex;
+    align-items: center         ;
+    flex-direction: column;
+}
+
+
+.singleDice img{
+    height : 15rem;
+    width : auto;
+    
+}
