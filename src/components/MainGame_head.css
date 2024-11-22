@@ -1,14 +1,14 @@
-.MainGame_head{
-    display: flex;
-    justify-content: space-around;
-    margin-top: 1rem;
+.MainGame_head {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 1rem;
 }
 
 .score {
   max-width: 5rem;
   text-align: center;
   line-height: 0rem;
-  margin : 0 2rem;
+  margin: 0 2rem;
 }
 
 .score h1 {
@@ -20,18 +20,26 @@
   font-size: 1rem;
 }
 
-.guessNumber{
-    display : flex;
-    gap : 0.5rem;
-    align-items : center;
+.guessNumber p{
+    display: flex;
+    justify-content: end;
+    font-weight: 800;
+    line-height: 0;
+    
 }
 
-.guessNumber div{
-    border : 2px solid black;
-    height : 2.5rem;
-    width : 2.5rem;
+.numberBoxMain{
     display: flex;
-    justify-content: center;
-    align-items: center;
-    font-weight: 600;
+    gap : 0.5rem;
+    margin-top: 1rem;
+}
+
+.numberBox {
+  border: 2px solid black;
+  height: 2.5rem;
+  width: 2.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
 }
