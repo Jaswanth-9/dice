@@ -1,3 +1,3 @@
 export default function MainGame() {
-  return <></>;
+  return <>Main Game</>;
 }
