@@ -1,8 +1,10 @@
 import { useState } from "react";
 import "./MainGameBody.css";
+import RulesBox from "./RulesBox"
 
 export default function MainGameBody({ currDice, rollDice, resetScore }) {
   const [isHover, setIsHover] = useState();
+  const [rules, setRules] = useState(false);
   const mouseEnter = () => {
     setIsHover(true);
   };
@@ -29,8 +31,10 @@ export default function MainGameBody({ currDice, rollDice, resetScore }) {
         >
           Reset
         </button>
-        <button>Show Rules</button>
+        <button onClick={() => setRules((prev) => !prev)}>Show Rules</button>
+        
       </div>
+      {rules && <RulesBox />}
     </main>
   );
 }
