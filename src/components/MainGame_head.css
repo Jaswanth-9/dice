@@ -28,6 +28,15 @@
     
 }
 
+.guessNumber p1{
+  display: flex;
+  justify-content: end;
+  font-weight: 800;
+  line-height: 0;
+  color : red;
+  
+}
+
 .numberBoxMain{
     display: flex;
     gap : 0.5rem;

@@ -1,26 +1,37 @@
-import { useState } from "react";
 import "./MainGame_head.css";
 
-export default function MainGame_head() {
+export default function MainGame_head({
+  selectNumber,
+  setselectNumber,
+  score,
+  error,
+  seterror
+}) {
   const number = [1, 2, 3, 4, 5, 6];
-  const [selectNumber, setselectNumber] = useState();
+
+  const numErrorHandler = (value) => {
+    setselectNumber(value)
+    seterror("")
+  }
 
   return (
     <main className="MainGame_head">
       <div className="score">
-        <h1>0</h1>
+        <h1>{score}</h1>
         <h3>Total Score</h3>
       </div>
       <div className="guessNumber">
+        <p1>{error}</p1>
         <div className="numberBoxMain">
           {number.map((value, i) => (
-            <div className="numberBox"
+            <div
+              className="numberBox"
               key={i}
-              onClick={() => setselectNumber(value)}
               style={{
                 backgroundColor: value === selectNumber ? "black" : "white",
                 color: value === selectNumber ? "white" : "black",
               }}
+              onClick={() =>numErrorHandler(value)}
             >
               {value}
             </div>

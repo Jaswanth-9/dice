@@ -10,3 +10,28 @@
     width : auto;
     
 }
+.buttons{
+    margin : 1rem;
+    display : flex;
+    flex-direction: column;
+    gap : 0.5rem;
+}
+
+.buttons button{
+    font-size: 1rem;
+    width : 15rem;
+    height : 2rem; 
+    background-color: black;
+    color : white;
+    border : none;
+    border-radius: 0.3rem;
+    transition: 0.3s ease-in;
+    cursor : pointer;
+    border : 1px solid black;
+}
+
+.buttons button:hover{
+    background-color: white;
+    color : black;
+    transition: 0.3s ease-in;
+}
